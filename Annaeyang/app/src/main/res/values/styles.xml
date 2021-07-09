@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/mainColor</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <color name="white">#ffffff</color>
+    <color name="gray">#99ffffff</color>
+    <color name="black">#000000</color>
+    <color name="mainColor">#eeb734</color>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="android:textCursorDrawable">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textColorHighlight">@color/white</item>
+    </style>
+
+</resources>

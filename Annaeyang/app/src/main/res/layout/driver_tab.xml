@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/mainColor">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/timeTV"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="PM 12:33"
+            android:textSize="30dp"
+            android:fontFamily="@font/yoon_gothic_340"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:id="@+id/busNum_d"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="차량번호"
+            android:textColor="#eeb734"
+            android:fontFamily="@font/yoon_gothic_350"
+            android:background="@drawable/whitetedury"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/whitetedury">
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="0dp"
+                android:layout_marginRight="-1dp"
+                android:text="현재 탑승인원ㅣ"
+                android:fontFamily="@font/yoon_gothic_350"
+                android:textColor="#EEB734"/>
+
+            <TextView
+                android:id="@+id/ridedNum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-1dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/yoon_gothic_350"
+                android:gravity="center_vertical"
+                android:paddingLeft="0dp"
+                android:text="탑승인원"
+                android:textColor="#EEB734" />
+        </LinearLayout>
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <Button
+                android:id="@+id/driverButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:onClick="driveBtn"
+                android:fontFamily="@font/yoon_gothic_350"
+                android:text="운행시작"
+                android:textColor="#eeb734"
+                android:background="@drawable/whitetedury"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

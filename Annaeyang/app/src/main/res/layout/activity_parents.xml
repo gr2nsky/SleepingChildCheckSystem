@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Parents.Parent"
+    android:orientation="vertical"
+    android:background="@color/mainColor">
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:paddingRight="10dp"
+                    android:id="@+id/bName"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="기사 이름"
+                    android:fontFamily="@font/yoon_gothic_350"
+                    android:textSize="25dp"
+                    android:textColor="#ffffff"/>
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:text="기사님"
+                    android:fontFamily="@font/yoon_gothic_350"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_weight="2"
+                android:onClick="callDriver"
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="전화 번호"
+                android:fontFamily="@font/yoon_gothic_330"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/busNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="차량 번호"
+            android:textSize="15dp"
+            android:fontFamily="@font/yoon_gothic_340"
+            android:textColor="#EEB734"
+            android:background="@drawable/whitetedury"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/whitetedury">
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/hard_gray_tedury"/>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:id="@+id/boardingTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="탑승 여부"
+                        android:textSize="25dp"
+                        android:fontFamily="@font/yoon_gothic_350"
+                        android:textColor="#000000"/>
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"/>
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/cap"/>
+                    <TextView
+                        android:id="@+id/cName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="20dp"
+                        android:text="이름"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/yoon_gothic_320"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/rideTimeText"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center_vertical"
+                        android:text="탑승 시각"
+                        android:fontFamily="@font/yoon_gothic_340"
+                        android:textSize="15dp"
+                        android:background="@drawable/graytedury"
+                        android:textColor="#A6000000"/>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/graywhitetedury">
+                        <TextView
+                            android:id="@+id/rideTimeTV"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="탑승시간"
+                            android:gravity="center"
+                            android:fontFamily="@font/yoon_gothic_330"
+                            android:textColor="#A6000000"/>
+                        <View
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"/>
+                        <TextView
+                            android:id="@+id/rideDateTV"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="탑승날자"
+                            android:gravity="center"
+                            android:fontFamily="@font/yoon_gothic_330"
+                            android:textColor="#6C000000"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <fragment
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
